@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/satori/go.uuid"
-	"gopkg.in/oauth2.v3"
+	"github.com/haoyixin/oauth2"
 )
 
 // NewAuthorizeGenerate create to generate the authorize code instance

@@ -3,7 +3,7 @@ package server
 import (
 	"time"
 
-	"gopkg.in/oauth2.v3"
+	"github.com/haoyixin/oauth2"
 )
 
 // Config configuration parameters

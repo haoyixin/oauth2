@@ -31,7 +31,7 @@
 ### Download and install
 
 ``` bash
-$ go get -u gopkg.in/oauth2.v3/...
+$ go get -u github.com/haoyixin/oauth2/...
 ```
 
 ### Create file `server.go`
@@ -43,11 +43,11 @@ import (
 	"log"
 	"net/http"
 
-	"gopkg.in/oauth2.v3/errors"
-	"gopkg.in/oauth2.v3/manage"
-	"gopkg.in/oauth2.v3/models"
-	"gopkg.in/oauth2.v3/server"
-	"gopkg.in/oauth2.v3/store"
+	"github.com/haoyixin/oauth2/errors"
+	"github.com/haoyixin/oauth2/manage"
+	"github.com/haoyixin/oauth2/models"
+	"github.com/haoyixin/oauth2/server"
+	"github.com/haoyixin/oauth2/store"
 )
 
 func main() {
@@ -148,9 +148,9 @@ Copyright (c) 2016 Lyric
 [Build-Status-Image]: https://travis-ci.org/go-oauth2/oauth2.svg?branch=master
 [Release-Url]: https://github.com/go-oauth2/oauth2/releases/tag/v3.7.0
 [Release-image]: http://img.shields.io/badge/release-v3.7.0-1eb0fc.svg
-[ReportCard-Url]: https://goreportcard.com/report/gopkg.in/oauth2.v3
-[ReportCard-Image]: https://goreportcard.com/badge/gopkg.in/oauth2.v3
-[GoDoc-Url]: https://godoc.org/gopkg.in/oauth2.v3
-[GoDoc-Image]: https://godoc.org/gopkg.in/oauth2.v3?status.svg
+[ReportCard-Url]: https://goreportcard.com/report/github.com/haoyixin/oauth2
+[ReportCard-Image]: https://goreportcard.com/badge/github.com/haoyixin/oauth2
+[GoDoc-Url]: https://godoc.org/github.com/haoyixin/oauth2
+[GoDoc-Image]: https://godoc.org/github.com/haoyixin/oauth2?status.svg
 [Coverage-Url]: https://coveralls.io/github/go-oauth2/oauth2?branch=master
 [Coverage-Image]: https://coveralls.io/repos/github/go-oauth2/oauth2/badge.svg?branch=master

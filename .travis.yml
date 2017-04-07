@@ -1,6 +1,6 @@
 language: go
 sudo: false
-go_import_path: gopkg.in/oauth2.v3
+go_import_path: github.com/haoyixin/oauth2
 go:
   - 1.7
 before_install:

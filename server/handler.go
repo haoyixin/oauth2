@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/errors"
+	"github.com/haoyixin/oauth2"
+	"github.com/haoyixin/oauth2/errors"
 )
 
 type (
