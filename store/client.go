@@ -19,6 +19,14 @@ type ClientStore struct {
 	data map[string]oauth2.ClientInfo
 }
 
+// RemoveByID deleting the client information by the ID
+func (cs *ClientStore) RemoveByID(id string) (err error) {
+	cs.Lock()
+	defer cs.Unlock()
+	delete(cs.data, id)
+	return
+}
+
 // GetByID according to the ID for the client information
 func (cs *ClientStore) GetByID(id string) (cli oauth2.ClientInfo, err error) {
 	cs.RLock()
@@ -31,10 +39,10 @@ func (cs *ClientStore) GetByID(id string) (cli oauth2.ClientInfo, err error) {
 	return
 }
 
-// Set set client information
-func (cs *ClientStore) Set(id string, cli oauth2.ClientInfo) (err error) {
+// Create set client information
+func (cs *ClientStore) Create(cli oauth2.ClientInfo) (err error) {
 	cs.Lock()
 	defer cs.Unlock()
-	cs.data[id] = cli
+	cs.data[cli.GetID()] = cli
 	return
 }

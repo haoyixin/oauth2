@@ -3,7 +3,13 @@ package oauth2
 type (
 	// ClientStore the client information storage interface
 	ClientStore interface {
-		// according to the ID for the client information
+		// create and store new client information
+		Create(cli ClientInfo) error
+
+		// use the ID to delete the client information
+		RemoveByID(id string) error
+
+		// user the ID for client information data
 		GetByID(id string) (ClientInfo, error)
 	}
 
